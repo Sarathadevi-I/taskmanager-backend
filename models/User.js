@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
-   email:  {
+  email: {
     type: String,
     required: true,
     trim: true
@@ -18,4 +18,5 @@ const userSchema = new mongoose.Schema({
   }
 });
 
-export default mongoose.model("userrole", userSchema);
+// 👇 IMPORTANT FIX
+export default mongoose.model("User", userSchema, "userroles");
