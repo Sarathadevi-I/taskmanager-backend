@@ -9,7 +9,7 @@ import itemRoutes from "./routes/items.js";
 
 const app = express();
 app.use(cors({
-  origin: "*", // or your Vercel domain
+     origin: "https://taskmanager-frontend-six-theta.vercel.app",
   credentials: true
 }));
 
