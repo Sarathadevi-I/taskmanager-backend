@@ -18,5 +18,5 @@ const userSchema = new mongoose.Schema({
   }
 });
 
-// 👇 IMPORTANT FIX
+// 🔥 THIS IS THE KEY LINE
 export default mongoose.model("User", userSchema, "userroles");
